@@ -142,6 +142,12 @@ Windows, check Settings → Privacy → Camera and allow desktop apps.
 You're on Python 3.13 (or 3.8-). Install Python 3.11 as described
 above and recreate the virtual environment with it.
 
+**`AttributeError: module 'cv2' has no attribute 'CascadeClassifier'`**
+You somehow pulled OpenCV 5.0, which removed `CascadeClassifier` from
+the top-level namespace. `requirements.txt` already pins
+`opencv-python<5`; make sure you ran `pip install -r requirements.txt`
+and not just `pip install opencv-python`.
+
 **`FileNotFoundError: Trained model not found`**
 You skipped Step 4. Run `python src/train_cnn.py` first.
 
