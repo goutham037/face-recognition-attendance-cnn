@@ -1,0 +1,3 @@
+# This folder holds captured student face images.
+# Each student lives in a subfolder: dataset/<id>_<name>/*.jpg
+# Captured by: python src/capture_faces.py

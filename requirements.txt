@@ -1,0 +1,8 @@
+# Python 3.10 or 3.11 is recommended.
+# TensorFlow 2.15 - 2.18 supports Python 3.9 - 3.12. Python 3.13 is NOT
+# supported yet by stable TensorFlow releases, so install one of the
+# supported versions first.
+
+tensorflow>=2.15,<3
+opencv-python>=4.8
+numpy>=1.24,<2
